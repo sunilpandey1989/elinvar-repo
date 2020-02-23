@@ -27,3 +27,10 @@ jar cvfe ../elinvar-0.0.1.SNAPSHOT.jar com.test.log.LogReader com/test/log/LogRe
 java -jar ../elinvar-0.0.1.SNAPSHOT.jar
 5. Verify the output
 
+Docker Support :
+
+Dockerfile is added in the project which is using java:8 as base image and on top of it, we have added our java code. To build the docker image, please run following command “docker build -t elinvar-case .” as a output it creates a docker image with name elinvar-case:latest
+
+Deploy a container based on above image with command: docker run -it elinvar-case:latest
+
+Once deployed the output will get displayed in the Console.
