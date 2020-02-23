@@ -60,7 +60,7 @@ public class LogReader {
 
 		FileInputStream fs;
 		try {
-			fs = new FileInputStream(System.getProperty("user.dir") + "\\src\\com\\test\\resource\\" + fileName);
+			fs = new FileInputStream(System.getProperty("user.dir") + "/com/test/resource/" + fileName);
 
 			BufferedReader reader = new BufferedReader(new InputStreamReader(fs));
 			String readLine = null;
